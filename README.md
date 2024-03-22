@@ -14,15 +14,7 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
  # Prod_cat_info
  Retrieving and analyzing data from a product category table. The table includes key information such as product category, sub-category, and product sub-code. This repository offers SQL queries and scripts 
  designed to efficiently fetch and process this data. It aims to provide businesses with insights into product preferences, category trends, and customer purchasing behavior. By leveraging this repository, 
- organizations can better understand their product landscape and tailor their marketing and inventory strategies to meet customer demands effectively."
-
-
-
-
-
-
-
-
-
+ organizations can better understand their product landscape and tailor their marketing and inventory strategies to meet customer demands effectively.
+ 
 # Tools Used: SQL, SQL Server
 
