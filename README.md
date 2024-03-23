@@ -18,3 +18,10 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
  
 # Tools Used: SQL, SQL Server
 
+# Business Object: 
+  The primary business objective is to gain insights into customer behavior using point-of-sale (POS) data from our retail store. Through comprehensive data analysis, we aim to uncover purchasing trends, product 
+  preferences, and customer segmentation. This analysis will enable us to optimize inventory levels, tailor marketing campaigns, and enhance the overall shopping experience. By understanding customer behavior more deeply, we strive to make informed decisions that drive sales growth, increase profitability, and build stronger relationships with our customers."
+
+#----------------------------------------------------------------------------------------------Question 1------------------------------------------------------------------------------------------------------------
+# Q 
+  
