@@ -32,20 +32,41 @@ preferences, and customer segmentation. This analysis will enable us to optimize
 
  ## Object Result 
 The analysis of transaction data from the 'Transactions' table reveals that the store type 'most_frequent_channel' is the most popular channel based on transaction count. The query identified the store type with the highest number of transactions, providing valuable insights into customer preferences and channel effectiveness. This information can be utilized by the retail store to prioritize marketing efforts, optimize inventory for the most frequented channels, and enhance overall business strategies to capitalize on the most popular sales channels and drive revenue growth.
- 
-     
+      
 # Business Object 2
-Q:-What is the count of Male and Female customers in the database?
-   (SQL Code (SSMS))
+## What is the count of Male and Female customers in the database?
+ ### (Code)
+SELECT Gender, COUNT(*) AS Count FROM Customers GROUP BY Gender;
+ ## (Result)
+ 
+## ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/4fe07b62-23db-4ede-8b94-e4f491a8275f)
+
+## Object Result 
+The analysis of customer data from the 'Customers' table provides a breakdown of gender distribution among customers. The query grouped customers by gender and counted the number of occurrences for each gender category. This data offers valuable insights into the demographic composition of the customer base, allowing for targeted marketing strategies and personalized promotions. Understanding the gender distribution can help the retail store tailor its product offerings, advertising campaigns, and customer engagement initiatives to better resonate with different customer segments, ultimately driving sales and enhancing customer satisfaction."
 
 # Business Object 3
 Q:-From which city do we have the maximum number of customers and how many?
-   (SQL Code (SSMS))
-   
+ ### (Code)
+SELECT TOP 1 city_code AS city_code , COUNT(*) AS number_customer FROM customers GROUP BY city_code ORDER BY COUNT(*) DESC;
+ ## (Result)
+
+ ## ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/648cc03c-181e-4a43-a364-240c17aac812)
+
+ ## Object Result  
+The analysis of customer data from the 'Customers' table reveals the city with the highest number of customers based on city_code. The query identified the city_code with the largest customer base, providing critical insights into regional customer distribution. This information can be leveraged to focus marketing efforts, tailor promotions, and optimize inventory to meet the demands of the most populated city. Understanding the geographic distribution of customers enables the retail store to implement targeted strategies, expand market reach, and enhance customer engagement to drive sales and foster brand loyalty in key regions.
     
 # Business Object 4
 Q:-How many sub-categories are there under the Books category?
-   (SQL Code (SSMS))
+  ### (Code)
+ Select count(*) as no_subcategory from prod_cat_info where prod_cat = 'books'
+  ## (Result)
+
+  ## ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/1bb3ad41-baf0-4c7f-9d96-64df012db9a6)
+
+  ## Object Result
+ The query on 'prod_cat_info' indicates the count of subcategories under the 'books' category. This insight informs inventory and marketing 
+ decisions, helping the retail store to diversify and optimize its 'books' product range based on customer preferences and demand.
+  
 # Business Object 5
 Q:-What is the maximum quantity of products ever ordered?
    (SQL Code (SSMS))
