@@ -167,7 +167,49 @@ where total_amt < 0 and datediff(month, '2014-09-01', tran_date) = 3 group by 
 ## -(Object Result)
 The query calculates the number of returns for each product category within a specific three-month period, starting from September 1, 2014. It joins the 'Transactions' table with 'prod_cat_info' based on matching product category codes and filters transactions where the total amount is less than zero, indicating returns. This analysis provides insights into return rates for different product categories during the specified period, helping to identify potential issues with product quality, customer satisfaction, or inventory management that may require attention and optimization strategies to reduce returns and enhance profitability.
  
- 
- 
- 
+# Business Object 13
+## Which store-type sells the maximum products; by value of sales amount and by quantity sold?
+  ### -(Code)
+select top 1(Store_type), count(Qty) as No_of_products, sum(total_amt) as Amount from Transactions
+where total_amt > 0 group by Store_type order by No_of_products desc
+  ## -(Result)
 
+  ## ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/78a269d6-1c01-43f0-bbce-b8285c2cd769)
+
+## -(Object Result) 
+The query identifies the store type with the highest number of sold products and corresponding total sales amount from the 'Transactions' table. It filters transactions where the total amount is greater than zero to focus on successful sales. The results are grouped by store type and sorted in descending order based on the number of products sold. This analysis offers insights into the performance of different store types in terms of sales volume and revenue, guiding strategies to optimize sales, inventory management, and promotional activities to drive profitability and business growth.
+ 
+# Business Object 14
+## What are the categories for which average revenue is above the overall average?
+  ### -(Code)
+select prod_cat, round(avg(total_amt), 2) as Averages from Transactions T inner join prod_cat_info P on T.prod_cat_code = P.prod_cat_code
+group by prod_cat having avg(total_amt) > (select avg(total_amt) from Transactions)
+  ## -(Result)
+
+  ## ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/df1e5c7c-57c4-430e-9f2b-ebc3f5c13fcf)
+
+## -(Object Result) 
+The query calculates the average transaction amount for each product category from the 'Transactions' table, joining with 'prod_cat_info' based on matching product category codes. The results are filtered to include only product categories with an average transaction amount greater than the overall average transaction amount across all categories. This analysis identifies product categories that perform above the average, providing insights to focus on high-performing categories for inventory management, marketing strategies, and promotional activities to optimize sales and profitability.
+
+# Business Object 15
+## Find the average and total revenue by each subcategory for the categories which are among top 5 categories in terms of quantity sold.
+  ### -(Code)
+  select top 5(prod_cat), count(Qty)as Quantity_sold from Transactions T inner join prod_cat_info P on T.prod_cat_code = T.prod_cat_code 
+  where total_amt > 0 group by prod_cat order by Quantity_sold desc
+  ## -(Result)
+
+  ## ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/a0dea646-624c-4d70-8ecc-58fe68ac0f20)
+
+## -(Object Result)
+The query identifies the top 5 product categories based on the quantity of products sold from the 'Transactions' table. It joins 'Transactions' with 'prod_cat_info' based on matching product category codes and filters transactions where the total amount is greater than zero, focusing on successful sales. The results are grouped by product category and sorted in descending order based on the quantity sold. This analysis provides insights into the best-selling product categories, guiding inventory management, marketing strategies, and promotional activities to optimize sales and enhance profitability.
+
+# Recommendations
+Based on the previous result, here are some recommendations for the business:
+####Inventory Management: Prioritize stocking and replenishing the top 5 best-selling product categories to ensure product availability and meet customer demand effectively.
+####Marketing Strategies: Allocate a higher marketing budget and promotional efforts towards the identified top-performing product categories to capitalize on their popularity and drive sales.
+####Product Bundling: Consider creating product bundles or packages incorporating items from the top-selling categories to encourage higher sales and increase average transaction value.
+####Customer Engagement: Develop targeted marketing campaigns and personalized promotions for the top-selling product categories to engage customers and enhance their shopping experience.
+####Supplier Negotiations: Negotiate better terms with suppliers for the top-performing product categories to improve profit margins and reduce costs.
+####Inventory Analysis: Conduct a detailed inventory analysis to identify slow-moving items in other categories and consider reevaluating their placement, pricing, or promotion strategies to boost sales.
+####Cross-Selling Opportunities: Explore cross-selling opportunities by recommending products from the top-performing categories to customers purchasing items from other categories to increase average transaction value.
+#####By implementing these recommendations, the business can optimize its sales strategies, improve inventory turnover, enhance customer satisfaction, and ultimately drive profitability and growth
