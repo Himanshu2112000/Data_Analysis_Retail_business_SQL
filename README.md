@@ -205,18 +205,19 @@ The query identifies the top 5 product categories based on the quantity of produ
 
 # Recommendations
 Based on the previous result, here are some recommendations for the business:
-####Inventory Management: Prioritize stocking and replenishing the top 5 best-selling product categories to ensure product availability and meet customer demand effectively.
 
-####Marketing Strategies: Allocate a higher marketing budget and promotional efforts towards the identified top-performing product categories to capitalize on their popularity and drive sales.
+-Inventory Management: Prioritize stocking and replenishing the top 5 best-selling product categories to ensure product availability and meet customer demand effectively.
 
-####Product Bundling: Consider creating product bundles or packages incorporating items from the top-selling categories to encourage higher sales and increase average transaction value.
+-Marketing Strategies: Allocate a higher marketing budget and promotional efforts towards the identified top-performing product categories to capitalize on their popularity and drive sales.
 
-####Customer Engagement: Develop targeted marketing campaigns and personalized promotions for the top-selling product categories to engage customers and enhance their shopping experience.
+-Product Bundling: Consider creating product bundles or packages incorporating items from the top-selling categories to encourage higher sales and increase average transaction value.
 
-####Supplier Negotiations: Negotiate better terms with suppliers for the top-performing product categories to improve profit margins and reduce costs.
+-Customer Engagement: Develop targeted marketing campaigns and personalized promotions for the top-selling product categories to engage customers and enhance their shopping experience.
 
-####Inventory Analysis: Conduct a detailed inventory analysis to identify slow-moving items in other categories and consider reevaluating their placement, pricing, or promotion strategies to boost sales.
+-Supplier Negotiations: Negotiate better terms with suppliers for the top-performing product categories to improve profit margins and reduce costs.
 
-####Cross-Selling Opportunities: Explore cross-selling opportunities by recommending products from the top-performing categories to customers purchasing items from other categories to increase average transaction value.
+-Inventory Analysis: Conduct a detailed inventory analysis to identify slow-moving items in other categories and consider reevaluating their placement, pricing, or promotion strategies to boost sales.
 
-#####By implementing these recommendations, the business can optimize its sales strategies, improve inventory turnover, enhance customer satisfaction, and ultimately drive profitability and growth
+-Cross-Selling Opportunities: Explore cross-selling opportunities by recommending products from the top-performing categories to customers purchasing items from other categories to increase average transaction value.
+
+#### By implementing these recommendations, the business can optimize its sales strategies, improve inventory turnover, enhance customer satisfaction, and ultimately drive profitability and growth
