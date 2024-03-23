@@ -23,7 +23,8 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
   preferences, and customer segmentation. This analysis will enable us to optimize inventory levels, tailor marketing campaigns, and enhance the overall shopping experience. By understanding customer behavior more deeply, we strive to make informed decisions that drive sales growth, increase profitability, and build stronger relationships with our customers."
 
 # Business Object 1 
-Q:-Which channel is most frequently used for transactions?
+## Which channel is most frequently used for transactions?
+
   (SQL Code (SSMS))
 
   SELECT TOP 1 store_type AS most_frequent_channel, COUNT(*) AS transaction_count
