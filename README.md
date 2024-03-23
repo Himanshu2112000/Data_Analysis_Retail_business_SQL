@@ -24,11 +24,9 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
 
 # Business Object 1 
 ## Which channel is most frequently used for transactions?
- ### (SQL Code (SSMS))
-
-#### SELECT TOP 1 store_type AS most_frequent_channel, COUNT(*) AS transaction_count FROM Transactions group by store_type order by COUNT(*) DESC
-  
-  ## (Result)
+ ### (Code)
+ SELECT TOP 1 store_type AS most_frequent_channel, COUNT(*) AS transaction_count FROM Transactions group by store_type order by COUNT(*) DESC
+   ## (Result)
    
   ### ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/590f88bc-4d83-43ef-9a34-44571dd6b5c1)
 
