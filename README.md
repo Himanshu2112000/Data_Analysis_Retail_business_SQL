@@ -19,8 +19,8 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
 # Tools Used: SQL, SQL Server
 
 # Business Needs: 
-  The primary business objective is to gain insights into customer behavior using point-of-sale (POS) data from our retail store. Through comprehensive data analysis, we aim to uncover purchasing trends, product 
-  preferences, and customer segmentation. This analysis will enable us to optimize inventory levels, tailor marketing campaigns, and enhance the overall shopping experience. By understanding customer behavior more deeply, we strive to make informed decisions that drive sales growth, increase profitability, and build stronger relationships with our customers."
+The primary business objective is to gain insights into customer behavior using point-of-sale (POS) data from our retail store. Through comprehensive data analysis, we aim to uncover purchasing trends, product 
+preferences, and customer segmentation. This analysis will enable us to optimize inventory levels, tailor marketing campaigns, and enhance the overall shopping experience. By understanding customer behavior more deeply, we strive to make informed decisions that drive sales growth, increase profitability, and build stronger relationships with our customers."
 
 # Business Object 1 
 ## Which channel is most frequently used for transactions?
@@ -30,6 +30,9 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
    
   ### ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/590f88bc-4d83-43ef-9a34-44571dd6b5c1)
 
+ ## Object Result 
+The analysis of transaction data from the 'Transactions' table reveals that the store type 'most_frequent_channel' is the most popular channel based on transaction count. The query identified the store type with the highest number of transactions, providing valuable insights into customer preferences and channel effectiveness. This information can be utilized by the retail store to prioritize marketing efforts, optimize inventory for the most frequented channels, and enhance overall business strategies to capitalize on the most popular sales channels and drive revenue growth.
+ 
      
 # Business Object 2
 Q:-What is the count of Male and Female customers in the database?
