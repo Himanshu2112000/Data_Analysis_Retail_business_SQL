@@ -25,7 +25,17 @@ A GitHub repository housing SQL scripts and queries tailored for retail business
 # Business Object 1 
 Q:-Which channel is most frequently used for transactions?
   (SQL Code (SSMS))
-  
+
+  SELECT TOP 1 store_type AS most_frequent_channel, COUNT(*) AS transaction_count
+  FROM Transactions
+  GROUP BY store_type
+  ORDER BY COUNT(*) DESC
+     
+   (Result)
+   
+   ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/590f88bc-4d83-43ef-9a34-44571dd6b5c1)
+
+     
 # Business Object 2
 Q:-What is the count of Male and Female customers in the database?
    (SQL Code (SSMS))
@@ -33,16 +43,7 @@ Q:-What is the count of Male and Female customers in the database?
 # Business Object 3
 Q:-From which city do we have the maximum number of customers and how many?
    (SQL Code (SSMS))
-   -- SELECT * from Transactions;
-   --SELECT TOP 1 store_type AS most_frequent_channel, COUNT(*) AS transaction_count
-     FROM Transactions
-     GROUP BY store_type
-     ORDER BY COUNT(*) DESC
-     
-   (Result) 
-   ![image](https://github.com/Himanshu2112000/Data_Analysis_Retail_business_SQL/assets/164239242/590f88bc-4d83-43ef-9a34-44571dd6b5c1)
-
-     
+   
     
 # Business Object 4
 Q:-How many sub-categories are there under the Books category?
